@@ -25,7 +25,7 @@ On load of the Visual & Audio views, the list method is not selected. Messages a
 if the user tries to submit a response without a selected list. The user's responses are validated in the Validation Screen Controller 
 for the Validation Screen view. Blank submissions are allowed.
 
-#How to download & run in Eclipse
+# How to download & run in Eclipse
 1. On the main page of the BitLinguist repository, locate the green clone/download button, and copy the URL.
 2. In Elicpse, switch to the EGit view, and click "Clone Existing Repository"
 3. Paste the copied repository URI into the correct field; doing so should autopopulate the other fields. Protocol should be 
