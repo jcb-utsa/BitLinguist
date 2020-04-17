@@ -1,14 +1,13 @@
 package application.controller;
 
-import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
+import application.model.BLTest;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -60,6 +59,7 @@ public class ValidateController implements Initializable {
 	int matchedIndex;
 	String passMethod;
 	String passList;
+	BLTest obj = new BLTest();
 	
 	/***
 	 * setMethod() sets the study method passed from 
@@ -123,7 +123,7 @@ public class ValidateController implements Initializable {
 	
 	
 	/***
-	 * validate() compares the user-submitted response
+	 * compare() compares the user-submitted response
 	 * to the correct response and displays the appropriate message
 	 * @param event
 	 * @throws IOException
@@ -142,37 +142,9 @@ public class ValidateController implements Initializable {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-				
-		//read in data from file into arraylist
-		try {
-			//read data into an array
-			FileInputStream input = new FileInputStream(fileName);
-			BufferedReader buffer = new BufferedReader(new InputStreamReader(input));
-			String line = buffer.readLine();
-			while(line != null) {
-				vocabList.add(line);
-				line = buffer.readLine();
-			}
-			buffer.close();	
-			//validate input
-			String tmp[] = vocabList.get(matchedIndex).split(",");
-			//set labels
-			correctResp1.setText(tmp[0].trim());
-			correctResp2.setText(tmp[1].trim());
-			//set text to lower and & trim
-			String ur1=userResp1.getText().toLowerCase().trim();
-			String ur2=userResp2.getText().toLowerCase().trim();
-			String cr1=correctResp1.getText().toLowerCase();
-			String cr2=correctResp2.getText().toLowerCase();
-			//compare & set response
-			if(ur1.equals(cr1)&& ur2.equals(cr2)) {
-				successMsg.setText("Correct!");
-			}else {
-				successMsg.setText("Try Again!");
-			}
-		} catch (IOException ex) {
-			System.err.println(ex);
-		}
+		
+		obj.checkAnswers(correctResp1, correctResp2, userResp1, userResp2, successMsg, fileName, matchedIndex);
+
 	}
 	
 	/***
