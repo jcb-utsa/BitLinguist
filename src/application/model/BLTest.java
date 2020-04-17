@@ -19,7 +19,7 @@ public class BLTest {
 			BufferedReader buffer = new BufferedReader(new InputStreamReader(input));
 			String line = buffer.readLine();
 			while(line != null) {
-				vocabList.add(line);
+				vocabList.add(line); 
 				line = buffer.readLine();
 			}
 			buffer.close();	
