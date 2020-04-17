@@ -11,6 +11,16 @@ import javafx.scene.control.Label;
 public class BLTest {
 	ArrayList<String> vocabList = new ArrayList<String>();
 	
+	/***
+	* checkAnswers() compares the user's answers to the correct answers
+	* @param correctResp1 Label correctResp1
+	* @param correctResp2 Label correctResp2
+	* @param userResp1 Label userResp1
+	* @param userResp2 Label userResp2
+	* @param successMsg Label successMsg
+	* @param fileName String fileName
+	* @param matchedIndex int matchedIndex
+	**/
 	public void checkAnswers(Label correctResp1, Label correctResp2, Label userResp1, Label userResp2, Label successMsg, String fileName, int matchedIndex) {
 				
 		try {
