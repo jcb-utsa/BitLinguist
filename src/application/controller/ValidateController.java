@@ -43,7 +43,7 @@ public class ValidateController implements Initializable {
 	@FXML
 	private Label correctResp1;
 	@FXML 
-	private Label correctResp2;  
+	private Label correctResp2;     
 	@FXML 
 	private Label successMsg;
 	
