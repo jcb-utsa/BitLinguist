@@ -35,7 +35,7 @@ public class ValidateController implements Initializable {
 	private RadioButton list1; //vocab list 1 
 	@FXML
 	private RadioButton list2; //vocab list 2
-	
+	  
 	@FXML
 	private Label userResp1;
 	@FXML 

@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 import javafx.scene.control.Label;
-  
+    
 public class BLTest {
 	ArrayList<String> vocabList = new ArrayList<String>();
 	
