@@ -98,8 +98,11 @@ public class VisualController implements Initializable {
 			listName="list1"; //directory of photos for list one
 		} else if(chooseVocab.getSelectedToggle()==list2){
 			listName = "list2"; //directory of photos for list two
+		}else {
+			new Alert(Alert.AlertType.ERROR, "You must select a list").showAndWait();
+			return;
 		}
-		
+		 
 		//load random image
 		imgNum= randomName(); 
 		String imgName = String.valueOf(imgNum);
