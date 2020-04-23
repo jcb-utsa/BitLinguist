@@ -1,6 +1,6 @@
 # BitLinguist
 
-Developers: Jennifer Bailey(ofq551), Kara Gustavus (wbp233), Itzel Romero Sanchez(grn638)
+Program Developers: Jennifer Bailey(ofq551), Kara Gustavus (wbp233), Itzel Romero Sanchez(grn638)
 
 BitLinguist is a desktop application built with JavaFX in Eclipse that allows students to practice their vocabularly for a
 foreign language class. For our first iteration, we choose to use Chinese as our test language. The application lets students 
