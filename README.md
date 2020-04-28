@@ -27,9 +27,9 @@ for the Validation Screen view. Blank submissions are allowed.
 
 # How to download & run in Eclipse
 1. On the main page of the BitLinguist repository, locate the green clone/download button, and copy the URL.
-2. In Elicpse, switch to the EGit view, and click "Clone Existing Repository"
+2. In Elicpse, switch to the EGit view/perspective, and click "Clone Existing Repository"
 3. Paste the copied repository URI into the correct field; doing so should autopopulate the other fields. Protocol should be 
    left as https
 4. Click next and follow the directions on the following screens to select the master branch and indicate the local destination of 
    the repository.
-5. Open Main.java and run the program.
+5. Switch back to the Java perspective. Open Main.java and run the program.
